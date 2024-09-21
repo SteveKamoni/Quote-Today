@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/Wallpaper\ light.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.nav-inner {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+  border: 1px solid lightsalmon;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border: 1px solid lightsalmon;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn {
+  width: 75px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme {
+  margin-right: 1.5rem;
+  border: 1px solid lightsalmon;
+}
+
+.theme-img {
+  width: 20px;
+  height: 20px;
+}
