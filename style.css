@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: rgba(17, 45, 66, 1);
+  --secondary-color: rgba(167, 189, 200, 1);
+  --supporting-color: rgba(245, 123, 89, 1);
+}
+
 body {
   background-image: url(./images/Wallpaper\ light.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 1.5em;
 }
 
+/** Nav section */
 .nav {
   display: flex;
   flex-direction: row;
@@ -57,4 +65,55 @@ body {
 .theme-img {
   width: 20px;
   height: 20px;
+}
+
+/** header sect */
+header {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 4rem;
+}
+
+/** intro section */
+.intro-cont,
+.feel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.intro {
+  max-width: 550px;
+  margin-top: 2rem;
+  font-size: 1em;
+  text-align: center;
+}
+
+.feel p {
+  max-width: 200px;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.decn,
+.decn-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.decn-inner {
+  width: 500px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+}
+
+.decn-box {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
