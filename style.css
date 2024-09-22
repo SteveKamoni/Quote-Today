@@ -156,6 +156,55 @@ header {
   background-color: lightgreen;
 }
 
+.mc1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mc1-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  background-color: lightseagreen;
+}
+
+#mc1-close {
+  width: 30px;
+  height: 30px;
+  margin: 0.5rem 1rem 0 0;
+}
+
+.mc2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#quote {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.mc3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: lightslategray;
+}
+
+#author {
+  margin: 2rem 1rem 0 0;
+  background-color: lightcoral;
+  padding: 1rem;
+}
+
 /** footer section */
 footer {
   position: absolute;
