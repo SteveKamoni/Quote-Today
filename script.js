@@ -8,7 +8,7 @@ const authorModal = document.getElementById("author");
 const modal = document.querySelector(".modal-container");
 const quoteModal = document.getElementById("quote");
 const body = document.getElementById("body");
-
+const overlay = document.getElementById("intro-overlay");
 themeBtn.addEventListener("click", () => {
   alert("Is working!");
 });
@@ -397,8 +397,13 @@ const angry = [
 
 window.onload = function () {
   setTimeout(() => {
-    document.getElementById("intro-overlay").style.opacity = 0;
+    overlay.style.opacity = 0;
   }, 2000);
+
+  setTimeout(() => {
+    overlay.style.width = 0;
+    overlay.style.height = 0;
+  }, 4000);
 };
 
 closeModal.addEventListener("click", () => {

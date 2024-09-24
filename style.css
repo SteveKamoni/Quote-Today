@@ -5,9 +5,10 @@
 }
 
 :root {
-  --primary-color: rgba(17, 45, 66, 1);
-  --secondary-color: rgba(167, 189, 200, 1);
-  --supporting-color: rgba(245, 123, 89, 1);
+  --primary-color: #112d42;
+  --secondary-color: #a7bdc8;
+  --supporting-color: #f57b59;
+  --text-color: whitesmoke;
 }
 
 body {
@@ -20,10 +21,22 @@ body {
 
 /** Nav section */
 .nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: rgb(17, 45, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 45, 66, 0.4) 100%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.nav::before {
+  z-index: -1;
+  filter: blur(7px);
 }
 
 .nav-inner {
@@ -31,6 +44,13 @@ body {
   flex-direction: row;
   width: 400px;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: Kyiv * Type Serif;
 }
 
 .logo {
@@ -111,9 +131,19 @@ header {
   height: 100px;
   align-items: center;
   justify-content: space-evenly;
-  background-color: antiquewhite;
   border-top-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
+  background: rgb(9, 32, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 66, 99, 0.901) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border: 1px solid var(--supporting-color);
+}
+
+.modal:before {
+  filter: blur(5px);
 }
 
 .decn-box {
@@ -145,7 +175,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightsalmon;
+  background: rgb(9, 32, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 81, 113, 0.901) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
   z-index: 999;
 }
 
@@ -238,5 +273,11 @@ footer {
   padding: 1rem;
   bottom: 0;
   text-align: center;
-  background-color: lightcoral;
+  background: rgb(9, 32, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 23, 34, 0.7) 100%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  color: var(--text-color);
 }
