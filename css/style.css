@@ -85,10 +85,17 @@ a {
   height: 20px;
 }
 
+.theme button:hover {
+  cursor: pointer;
+  background-color: var(--supporting-color);
+  color: var(--text-color);
+}
+
 a:hover {
-  color: #f57b59;
-  transform: scale(1.5);
+  color: #ffab93;
+  transform: translateY(2px);
   transition: 0.85s ease-in-out;
+  border-bottom: 2px solid var(--supporting-color);
 }
 
 /** header sect */
