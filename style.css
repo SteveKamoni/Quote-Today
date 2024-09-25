@@ -249,6 +249,7 @@ header {
     rgba(255, 255, 255, 1) 100%
   );
   color: var(--text-color);
+  border: 3px solid var(--supporting-color);
 }
 
 .mc3 {
@@ -272,6 +273,7 @@ header {
   );
   padding: 1rem;
   color: var(--secondary-color);
+  border: 1px solid var(--supporting-color);
 }
 
 .hidden {

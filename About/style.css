@@ -14,8 +14,12 @@ body {
 }
 
 .right {
-  width: 640px;
-  height: 640px;
+  width: 540px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: antiquewhite; */
 }
 
 .right img {
@@ -30,4 +34,8 @@ body {
   flex-direction: column;
   max-width: 600px;
   gap: 4rem;
+}
+
+.left h1 {
+  font-size: 2.8em;
 }
