@@ -436,3 +436,24 @@ angryBtn.addEventListener("click", () => {
     angryQuote.author === `Unknown` ? "Go Look 😄" : angryQuote.author;
   modal.classList.remove("hidden");
 });
+
+// dark theme icon &#x263E;
+// light theme icon &#x2600;
+
+//* fade section
+
+function handscroll() {
+  const fadeIn = document.querySelectorAll(".fade-in");
+
+  fadeIn.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      setTimeout(() => {
+        element.classList.add("visible");
+      }, 3300);
+    }
+  });
+}
+
+window.addEventListener("scroll", handscroll);
+window.addEventListener("load", handscroll);

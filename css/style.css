@@ -87,7 +87,7 @@ a {
 
 .theme button:hover {
   cursor: pointer;
-  background-color: var(--supporting-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
 }
 
