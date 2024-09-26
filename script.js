@@ -1,4 +1,3 @@
-const themeBtn = document.getElementById("theme-btn");
 const happyBtn = document.getElementById("happy");
 const sadBtn = document.getElementById("sad");
 const angryBtn = document.getElementById("angry");
@@ -9,9 +8,6 @@ const modal = document.querySelector(".modal-container");
 const quoteModal = document.getElementById("quote");
 const body = document.getElementById("body");
 const overlay = document.getElementById("intro-overlay");
-themeBtn.addEventListener("click", () => {
-  alert("Is working!");
-});
 
 const happy = [
   {

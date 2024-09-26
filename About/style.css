@@ -39,3 +39,25 @@ body {
 .left h1 {
   font-size: 2.8em;
 }
+
+.content-about {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+}
+
+.content-about.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content-right {
+  opacity: 0;
+  transform: translateY(-22px);
+  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+}
+
+.content-right.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

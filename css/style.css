@@ -32,6 +32,7 @@ body {
     rgba(17, 45, 66, 0.4) 100%,
     rgba(255, 255, 255, 0.5) 100%
   );
+  border-bottom: 1px solid var(--supporting-color);
 }
 
 .nav::before {
@@ -74,6 +75,7 @@ a {
   justify-content: center;
   font-size: 1em;
   border-radius: 0.5rem;
+  transition: 0.8s;
 }
 
 .theme {
@@ -84,7 +86,6 @@ a {
   width: 20px;
   height: 20px;
 }
-
 .theme button:hover {
   cursor: pointer;
   background-color: var(--primary-color);
@@ -125,6 +126,7 @@ header {
   margin-top: 4rem;
   text-align: center;
   font-size: 2em;
+  color: var(--primary-color);
 }
 
 /** decision section  */
@@ -256,6 +258,7 @@ header {
     rgba(255, 255, 255, 1) 100%
   );
   color: var(--text-color);
+  border: 3px solid var(--supporting-color);
 }
 
 .mc3 {
@@ -279,6 +282,7 @@ header {
   );
   padding: 1rem;
   color: var(--secondary-color);
+  border: 1px solid var(--supporting-color);
 }
 
 .hidden {
@@ -306,6 +310,19 @@ header {
 
 #mc1-close:hover {
   color: #f57b59;
+}
+
+/* *  fade in section*/
+
+.content {
+  opacity: 0;
+  transform: translateY(-22px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /** footer section */
