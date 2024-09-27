@@ -327,6 +327,11 @@ header {
   transform: translateY(0);
 }
 
+.fade-backg.load {
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
 /** footer section */
 footer {
   position: absolute;
