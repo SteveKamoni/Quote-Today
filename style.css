@@ -9,6 +9,8 @@
   --secondary-color: #a7bdc8;
   --supporting-color: #f57b59;
   --text-color: whitesmoke;
+  --header-font: "Kaisei HarunoUmi", serif;
+  --quote-font: "Kaushan Script", cursive;
 }
 
 body {
@@ -17,6 +19,17 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 1.5em;
+}
+
+.background-image {
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 2s ease-in;
 }
 
 /** Nav section */
@@ -45,6 +58,7 @@ body {
   flex-direction: row;
   width: 400px;
   justify-content: space-between;
+  margin-right: 5rem;
 }
 
 a {
@@ -329,7 +343,7 @@ header {
 
 .fade-backg.load {
   opacity: 0;
-  transition: opacity 0.8s ease-in;
+  transition: opacity 2s ease-in;
 }
 
 /** footer section */

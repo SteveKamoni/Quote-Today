@@ -19,6 +19,17 @@ body {
   font-size: 1.5em;
 }
 
+.background-image {
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
 /** Nav section */
 .nav {
   position: relative;
@@ -45,6 +56,7 @@ body {
   flex-direction: row;
   width: 400px;
   justify-content: space-between;
+  margin-right: 5rem;
 }
 
 a {
@@ -287,6 +299,8 @@ header {
 
 .hidden {
   visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.8s ease-out, opacity 0.8s ease-out;
 }
 
 #mc1-close:hover {
@@ -297,8 +311,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  height: 100vh;
   width: 100%;
-  height: 100%;
   background-image: url(./images/logo-white.png);
   background-size: cover;
   background-position: center;
@@ -323,6 +337,11 @@ header {
 .content.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.fade-backg.load {
+  opacity: 0;
+  transition: opacity 2s ease-in;
 }
 
 /** footer section */

@@ -1,7 +1,8 @@
 const navigation = document.querySelector(".nav");
 const themeBtn = document.querySelector(".btn");
-const backgroundImage = document.getElementById("body");
+const Body = document.getElementById("body");
 const fadeEffect = document.querySelector(".fade-backg");
+
 const theme = {
   dark: {
     nav: "#112d42",
@@ -10,18 +11,27 @@ const theme = {
   },
 };
 
-localStorage.setItem("theme", JSON.stringify(theme));
+// localStorage.setItem("theme", JSON.stringify(theme));
+
+// themeBtn.addEventListener("click", () => {
+//   // call the them to use
+//   const storedTheme = JSON.parse(localStorage.getItem("theme"));
+//   //   store the theme for use
+//   const selectedTheme = storedTheme.dark;
+
+//   // navigation.style.background = selectedTheme.nav;
+//   backgroundImage.style.backgroundImage = selectedTheme.background;
+//   backgroundImage.classList.add("load");
+//   setTimeout(() => {
+//     backgroundImage.style.opacity = 1;
+//   }, 1000);
+//   localStorage.setItem("storedTheme", "dark");
+// });
 
 themeBtn.addEventListener("click", () => {
-  // call the them to use
-  const storedTheme = JSON.parse(localStorage.getItem("theme"));
-  //   store the theme for use
-  const selectedTheme = storedTheme.dark;
+  Body.style.backgroundImage = "url('./images/light.jpg')";
 
-  // navigation.style.background = selectedTheme.nav;
   setTimeout(() => {
-    backgroundImage.style.backgroundImage = selectedTheme.background;
-    fadeEffect.classList.add("load");
-  }, 1000);
-  localStorage.setItem("storedTheme", "dark");
+    Body.style.opacity = 1;
+  }, 500);
 });
