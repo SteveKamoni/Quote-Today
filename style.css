@@ -10,7 +10,7 @@
   --supporting-color: #f57b59;
   --text-color: whitesmoke;
   --header-font: "Kaisei HarunoUmi", serif;
-  --quote-font: "Kaushan Script", cursive;
+  --quote-font: "Kavivanar", cursive;
 }
 
 body {
@@ -133,6 +133,9 @@ header {
   margin-top: 2rem;
   font-size: 1em;
   text-align: center;
+}
+header h1 {
+  font-family: var(--header-font);
 }
 
 .feel p {
@@ -273,6 +276,7 @@ header {
   );
   color: var(--text-color);
   border: 3px solid var(--supporting-color);
+  font-family: var(--quote-font);
 }
 
 .mc3 {
