@@ -38,6 +38,7 @@ body {
 
 .left h1 {
   font-size: 2.8em;
+  font-family: var(--header-font);
 }
 
 .content-about {

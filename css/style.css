@@ -9,6 +9,8 @@
   --secondary-color: #a7bdc8;
   --supporting-color: #f57b59;
   --text-color: whitesmoke;
+  --header-font: "Kaisei HarunoUmi", serif;
+  --quote-font: "Kavivanar", cursive;
 }
 
 body {
@@ -131,6 +133,9 @@ header {
   margin-top: 2rem;
   font-size: 1em;
   text-align: center;
+}
+header h1 {
+  font-family: var(--header-font);
 }
 
 .feel p {
@@ -271,6 +276,7 @@ header {
   );
   color: var(--text-color);
   border: 3px solid var(--supporting-color);
+  font-family: var(--quote-font);
 }
 
 .mc3 {
@@ -311,8 +317,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
   width: 100%;
+  height: 100%;
   background-image: url(./images/logo-white.png);
   background-size: cover;
   background-position: center;

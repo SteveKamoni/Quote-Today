@@ -17,6 +17,7 @@ section {
 section h1 {
   font-size: 5em;
   margin: 13rem 0 7rem 0;
+  font-family: var(--header-font);
 }
 
 p {
