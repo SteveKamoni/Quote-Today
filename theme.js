@@ -33,5 +33,5 @@ themeBtn.addEventListener("click", () => {
 
   setTimeout(() => {
     Body.style.opacity = 1;
-  }, 500);
+  }, 600);
 });
